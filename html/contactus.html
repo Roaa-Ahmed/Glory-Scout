@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Glory Scout</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="../images/Frame 38.png" alt="Glory Scout Logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="player-dashboard.html">Players</a></li>
+                    <li><a href="coach-dashboard.html">Coaches</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contactus.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="sign-up">Sign Up</a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Get in <span class="green-text">Touch</span></h1>
+                <p class="hero-description">We'd love to hear from you. Whether you have a question about our services, need help with your account, or want to collaborate, our team is ready to assist you.</p>
+            </div>
+            <div class="hero-image">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+               
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>123 Football Avenue</p>
+                    <p>Cairo, Egypt</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+20 123 671 1259</p>
+                    <p>Mon-Fri, 9am-6pm</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>kareemsaad252@gmail.com</p>
+                    <p>support@gloryscout.com</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Friday: 9am - 6pm</p>
+                    <p>Weekend: 10am - 4pm</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-tag"></i>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <div class="input-with-icon textarea-icon">
+                            <i class="fas fa-comment-alt"></i>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the <a href="#" class="green-text">Privacy Policy</a> and consent to being contacted by Glory Scout.</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="section-header">
+                <h2>Find Us <span class="green-text">Here</span></h2>
+                <p>Visit our office or reach out to us online. We're always ready to help.</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33564059882!2d31.44541555!3d30.58821475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d6f0349eb0fd%3A0x7648ec7a2b4d9fc5!2sZagazig%2C%20Zagazig%20Qism%202%2C%20Zagazig%2C%20Ash%20Sharqia%20Governorate!5e0!3m2!1sen!2seg!4v1683210299794!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Connect Section -->
+        <section class="connect-section">
+            <div class="connect-content">
+                <h2>Connect With Us on <span class="green-text">Social Media</span></h2>
+                <p>Stay updated with the latest news, events, and success stories from Glory Scout.</p>
+                
+                <div class="social-media-links">
+                    <a href="#" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      
+                    </a>
+                    <a href="#" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                       
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        
+                    </a>
+                    <a href="#" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        
+                    </a>
+                    <a href="#" class="social-link youtube">
+                        <i class="fab fa-youtube"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="../images/Frame 38.png" alt="Glory Scout Logo">
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest updates and news directly to your inbox.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="footer-nav-container">
+                    <div class="footer-nav-column">
+                        <h3>Home</h3>
+                        <ul>
+                            <li><a href="#">Hero Section</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Our Works</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Clients</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Players</h3>
+                        <ul>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Categories</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Strategic Marketing</a></li>
+                            <li><a href="#">Negotiation Wizardry</a></li>
+                            <li><a href="#">Closing Success</a></li>
+                            <li><a href="#">Property Management</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#">Contact Form</a></li>
+                            <li><a href="#">Our Offices</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>©2025 <span class="green-text">GloryScout</span>. All Rights Reserved.</p>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Success Modal -->
+        <div class="modal" id="success-modal">
+            <div class="modal-content">
+                <div class="modal-icon success">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for reaching out. We'll get back to you as soon as possible.</p>
+                <button class="modal-close-btn">Close</button>
+            </div>
+        </div>
+
+        <!-- Error Modal -->
+        <div class="modal" id="error-modal">
+            <div class="modal-content">
+                <div class="modal-icon error">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <h3>Oops! Something went wrong.</h3>
+                <p>Please try again later or contact us directly via email or phone.</p>
+                <button class="modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/contactus.js"></script>
+</body>
+</html>
+

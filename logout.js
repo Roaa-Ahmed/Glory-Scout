@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Add event listeners to buttons
     const loginBtn = document.querySelector(".login-btn")
-    const homeBtn = document.querySelector(".home-btn")
+    const homeBtn = document.querySelector(".index-btn")
   
     if (loginBtn) {
       loginBtn.addEventListener("click", (e) => {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Redirect after a short delay
         setTimeout(() => {
-          window.location.href = "home.html"
+          window.location.href = "index.html"
         }, 500)
       })
     }

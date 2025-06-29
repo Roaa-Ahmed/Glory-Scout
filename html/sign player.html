@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glory Scout - Coach Sign Up</title>
-    <link rel="stylesheet" href="sign coaches.css">
+    <title>Glory Scout - Player Sign Up</title>
+    <link rel="stylesheet" href="../css/sign player.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,18 +14,18 @@
         <div class="container">
             <div class="logo">
                 <!-- ضع مسار صورة اللوجو الخاصة بك هنا -->
-                <img src="Frame 38.png" alt="Glory Scout">
+                <img src="../images/Frame 38.png" alt="Glory Scout">
             </div>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="#">Players</a>
-                <a href="#" class="active">Coaches</a>
-                <a href="#">About Us</a>
+                <a href="../index.html">Home</a>
+                <a href="sign player.html" class="active">Player</a>
+                <a href="sign coaches.html">Coaches</a>
+                <a href="about.html">About Us</a>
             </nav>
             <div class="auth-buttons">
-                <a href="#" class="coach-btn">For Coaches</a>
-                <a href="#" class="player-btn">For Players</a>
-                <a href="index.html" class="login-btn">Login</a>
+                <a href="#" class="player-btn active-btn">For Players</a>
+                <a href="signup-coach.html" class="coach-btn">For Coaches</a>
+                <a href="login.html" class="login-btn">Login</a>
             </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -38,7 +38,7 @@
         <!-- Signup Form -->
         <section class="signup-section">
             <div class="signup-container">
-                <h1><span class="highlight">Sign Up</span> As Coach</h1>
+                <h1><span class="highlight">Sign Up</span> As Player</h1>
                 <p class="welcome-text">Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
                 
                 <form id="signupForm">
@@ -55,6 +55,16 @@
                         <div class="form-group password-group">
                             <input type="password" id="password" placeholder="Enter Your Password" required>
                             <i class="fas fa-eye toggle-password"></i>
+                            <div class="password-requirements">
+                                <p>Password must contain:</p>
+                                <ul>
+                                    <li id="length">At least 8 characters</li>
+                                    <li id="uppercase">At least 1 uppercase letter</li>
+                                    <li id="lowercase">At least 1 lowercase letter</li>
+                                    <li id="number">At least 1 number</li>
+                                    <li id="special">At least 1 special character</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="form-group password-group">
                             <input type="password" id="confirmPassword" placeholder="Confirm Your Password" required>
@@ -63,42 +73,27 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group select-group">
-                            <select id="specialization" required>
-                                <option value="" disabled selected>Select your specialization</option>
-                                <option value="technical">Technical Coach</option>
-                                <option value="fitness">Fitness Coach</option>
-                                <option value="goalkeeper">Goalkeeper Coach</option>
-                                <option value="youth">Youth Development</option>
-                                <option value="tactical">Tactical Analyst</option>
-                            </select>
-                            <i class="fas fa-chevron-down select-arrow"></i>
+                        <div class="form-group">
+                            <input type="number" id="age" placeholder="Enter Your Age" min="10" max="50" required>
                         </div>
-                        <div class="form-group select-group">
-                            <select id="experience" required>
-                                <option value="" disabled selected>Enter your experience</option>
-                                <option value="1-3">1-3 years</option>
-                                <option value="4-7">4-7 years</option>
-                                <option value="8-12">8-12 years</option>
-                                <option value="13+">13+ years</option>
-                            </select>
-                            <i class="fas fa-chevron-down select-arrow"></i>
+                        <div class="form-group">
+                            <input type="number" id="height" placeholder="Enter Your Height (CM)" min="120" max="220" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" id="clubName" placeholder="Enter your current club name" required>
+                            <input type="number" id="weight" placeholder="Enter Your Weight (KG)" min="30" max="150" required>
                         </div>
                         <div class="form-group select-group">
-                            <select id="coachingSpecialty" required>
-                                <option value="" disabled selected>Select your coaching specialty</option>
-                                <option value="attacking">Attacking Play</option>
-                                <option value="defending">Defensive Organization</option>
-                                <option value="possession">Possession-based</option>
-                                <option value="counter">Counter-attacking</option>
-                                <option value="set-pieces">Set Pieces</option>
-                                <option value="youth-development">Youth Development</option>
+                            <select id="position" required>
+                                <option value="" disabled selected>Select your position</option>
+                                <option value="goalkeeper">Goalkeeper</option>
+                                <option value="defender">Defender</option>
+                                <option value="midfielder">Midfielder</option>
+                                <option value="forward">Forward</option>
+                                <option value="striker">Striker</option>
+                                <option value="winger">Winger</option>
                             </select>
                             <i class="fas fa-chevron-down select-arrow"></i>
                         </div>
@@ -107,9 +102,18 @@
                     <div class="form-group file-upload-group">
                         <label for="profileImage" class="file-upload-label">
                             <span class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></span>
-                            <span class="upload-text">Upload your Profile image</span>
+                            <span class="upload-text">Upload your profile image</span>
                         </label>
                         <input type="file" id="profileImage" class="file-upload-input" accept="image/*">
+                        <div class="file-name">No File Chosen</div>
+                    </div>
+
+                    <div class="form-group file-upload-group">
+                        <label for="skillsVideo" class="file-upload-label">
+                            <span class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></span>
+                            <span class="upload-text">Upload your skills video</span>
+                        </label>
+                        <input type="file" id="skillsVideo" class="file-upload-input" accept="video/*">
                         <div class="file-name">No File Chosen</div>
                     </div>
                     
@@ -142,8 +146,8 @@
                 <div class="testimonials-header">
                     <h2>Our <span>Testimonials</span></h2>
                     <div class="testimonial-tabs">
-                        <button class="tab-btn">For Players</button>
-                        <button class="tab-btn active">For Coaches</button>
+                        <button class="tab-btn active">For Players</button>
+                        <button class="tab-btn">For Coaches</button>
                     </div>
                 </div>
                 
@@ -156,25 +160,25 @@
                         <div class="testimonial-card">
                             <div class="quote-icon">"</div>
                             <p class="testimonial-text">
-                                GloryScout has been my go-to platform for discovering football talent. Their user-friendly interface and detailed scouting reports have made finding the perfect players for my team effortless. Thanks to GloryScout, I've built a winning squad.
+                                GloryScout has completely changed my career path. Their platform helped me get noticed by top clubs and I've received multiple trial offers. The exposure and opportunities provided by GloryScout are unmatched in the industry.
                             </p>
-                            <p class="testimonial-author">Rona</p>
+                            <p class="testimonial-author">Ahmed</p>
                         </div>
                         
                         <div class="testimonial-card">
                             <div class="quote-icon">"</div>
                             <p class="testimonial-text">
-                                I recently started coaching a new team, and GloryScout has been instrumental in helping me find talented players and build a strong squad. Their platform and detailed scouting reports have been invaluable to my success.
+                                As a young player looking to advance my career, GloryScout has been invaluable. Their platform allowed me to showcase my skills to scouts from around the world. Within months, I received interest from several clubs.
                             </p>
-                            <p class="testimonial-author">Kareem</p>
+                            <p class="testimonial-author">Youssef</p>
                         </div>
                         
                         <div class="testimonial-card">
                             <div class="quote-icon">"</div>
                             <p class="testimonial-text">
-                                I love the convenience of GloryScout's platform. It allows me to discover talented players and manage my team efficiently. The platform is user-friendly and reliable, giving me peace of mind.
+                                The professional approach of GloryScout impressed me from day one. Their detailed player profiles and video analysis tools helped me present my abilities in the best possible way. I'm now playing for a club I could only dream of before.
                             </p>
-                            <p class="testimonial-author">Mensah</p>
+                            <p class="testimonial-author">Mohamed</p>
                         </div>
                     </div>
                     
@@ -194,28 +198,28 @@
         <div class="container">
             <div class="footer-logo">
                 <!-- ضع مسار صورة اللوجو الخاصة بك هنا -->
-                <img src="Frame 38.png" alt="Glory Scout">
+                <img src="../images/Frame 38.png" alt="Glory Scout">
             </div>
             
             <div class="footer-links">
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="#">Players</a>
                 <a href="#">Coaches</a>
-                <a href="contactus.html">Contact Us</a>
+                <a href="#">Contact Us</a>
             </div>
             
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>Roaa</span>
+                    <span>roaa</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <span>+20 12</span>
+                    <span>+20 122</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Egypt</span>
+                    <span>egypt</span>
                 </div>
             </div>
             
@@ -241,6 +245,6 @@
         </div>
     </footer>
 
-    <script src="sign coaches .js"></script>
+    <script src="../js/sign player.js"></script>
 </body>
 </html>

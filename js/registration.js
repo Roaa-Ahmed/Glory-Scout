@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
           // Redirect after a short delay
           setTimeout(() => {
-            window.location.href = "player-dashboard.html"
+            window.location.href = "home player.html"
           }, 500)
         })
       }
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
           // Redirect after a short delay
           setTimeout(() => {
-            window.location.href = "edit-profile.html"
+            window.location.href = "edit.html"
           }, 500)
         })
       }
